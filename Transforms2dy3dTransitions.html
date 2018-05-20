@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transforms 2D y 3D</title>
+  </head>
+  <body>
+    <h1>Transformaciones 2D</h1>
+    <div class="article">
+      <h2>Metodo Translate</h2>
+      <p>Movera el elemento de su posicion actual</p>
+      <div class="original">
+        Este es el div Original
+      </div>
+      <div class="example" id="translate">
+        Se ha movido 100px a la derecha y 10px hacia abajo desde su posicion inicial
+      </div>
+      </br>
+    </div>
+    <div class="article">
+      <h2>Metodo Translate</h2>
+      <p>Rotara el elemento de su posicion actual</p>
+      <div class="original">
+        Este es el div Original
+      </div>
+      <div class="example" id="rotate">
+        Ha sido rotado 35º desde su posicion inicial
+      </div>
+      </br>
+    </div>
+    <div class="article">
+      <h2>Metodo Scale</h2>
+      <p>Escalara el elemento de su posicion actual</p>
+      <div class="original">
+        Este es el div Original
+      </div>
+      <div class="example" id="scale">
+        Ha sido escalado su anchura dos veces y su anchura tres veces
+      </div>
+    </br>
+    </br>
+    </div>
+    <div class="article">
+      <h2>Metodo SkewX</h2>
+      <p>Girara el elemento en el plano X de su posicion actual</p>
+      <div class="original">
+        Este es el div Original
+      </div>
+      <div class="example" id="skewX">
+        Ha sido girado em el plano X 20º
+      </div>
+      </br>
+    </div>
+    <div class="article">
+      <h2>Metodo SkewY</h2>
+      <p>Girara el elemento en el plano Y de su posicion actual</p>
+      <div class="original">
+        Este es el div Original
+      </div>
+      <div class="example" id="skewY">
+        Ha sido girado en el plano Y 20º
+      </div>
+      </br>
+    </div>
+    <div class="article">
+      <h2>Metodo Skew</h2>
+      <p>Girara el elemento en ambos planos de su posicion actual</p>
+      <div class="original">
+        Este es el div Original
+      </div>
+      <div class="example" id="skew">
+        Ha sido girado en los planos X 20º e Y 30º
+      </div>
+      </br>
+    </div>
+    <div class="article">
+      <h2>Metodo Matrix</h2>
+      <p>Combina todos los metodos 2d en uno, los parametros seran:</p>
+      <p>scaleX(), skewY(),skewX(),scaleY(),translateX(),translateY()</p>
+      <div class="original">
+        Este es el div Original
+      </div>
+      <div class="example" id="matrix">
+        (2, -0.3, 0, 1, 0, 10)
+      </div>
+      </br>
+    </div>
+    <h1>Transformaciones 3D</h1>
+    <div class="listado">
+      <p>Encontraremos los siguientes metodos:</p>
+      <table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:22%">Function</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>matrix3d<br>
+    (<i>n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n</i>)</td>
+    <td>Defines a 3D transformation, using a 4x4 matrix of 16 values</td>
+  </tr>
+  <tr>
+    <td>translate3d(<i>x,y,z</i>)</td>
+    <td>Defines a 3D translation</td>
+  </tr>
+  <tr>
+    <td>translateX(<i>x</i>)</td>
+    <td>Defines a 3D translation, using only the value for the X-axis</td>
+  </tr>
+  <tr>
+    <td>translateY(<i>y</i>)</td>
+    <td>Defines a 3D translation, using only the value for the Y-axis</td>
+  </tr>
+  <tr>
+    <td>translateZ(<i>z</i>)</td>
+    <td>Defines a 3D translation, using only the value for the Z-axis</td>
+  </tr>
+  <tr>
+    <td>scale3d(<i>x,y,z</i>)</td>
+    <td>Defines a 3D scale transformation</td>
+  </tr>
+  <tr>
+    <td>scaleX(<i>x</i>)</td>
+    <td>Defines a 3D scale transformation by giving a value for the X-axis</td>
+  </tr>
+  <tr>
+    <td>scaleY(<i>y</i>)</td>
+    <td>Defines a 3D scale transformation by giving a value for the Y-axis</td>
+  </tr>
+  <tr>
+    <td>scaleZ(<i>z</i>)</td>
+    <td>Defines a 3D scale transformation by giving a value for the Z-axis</td>
+  </tr>
+  <tr>
+    <td>rotate3d(<i>x,y,z,angle</i>)</td>
+    <td>Defines a 3D rotation</td>
+  </tr>
+  <tr>
+    <td>rotateX(<i>angle</i>)</td>
+    <td>Defines a 3D rotation along the X-axis</td>
+  </tr>
+  <tr>
+    <td>rotateY(<i>angle</i>)</td>
+    <td>Defines a 3D rotation along the Y-axis</td>
+  </tr>
+  <tr>
+    <td>rotateZ(<i>angle</i>)</td>
+    <td>Defines a 3D rotation along the Z-axis</td>
+  </tr>
+  <tr>
+    <td>perspective(<i>n</i>)</td>
+    <td>Defines a perspective view for a 3D transformed element</td>
+  </tr>
+</tbody></table>
+    </div>
+    <div class="article">
+      <h2>Metodo rotateX</h2>
+      <p>Rotara el elemento sobre si mismo en el eje X</p>
+      <div class="original">
+        Este es el div Original
+      </div>
+      <div class="example" id="rotateX">
+        Rotado 150º respecto al original
+      </div>
+      </br>
+      <h1>Transitions</h1>
+      <div class="article">
+        <h2>Transitions</h2>
+        <p>Property=Propiedad a modificar, duration=Duracion del efecto, delay = retraso para que empiece el efecto</p>
+        <xmp>
+          <!DOCTYPE html>
+          <html>
+          <head>
+          <style>
+          .transition02 {
+              width: 100px;
+              height: 100px;
+              background: red;
+              -webkit-transition-property: width; /* Safari */
+              -webkit-transition-duration: 5s; /* Safari */
+              -webkit-transition-delay: 2s; /* Safari */
+              transition-property: width;
+              transition-duration: 5s;
+              transition-delay: 2s;
+          }
+
+          .transition02:hover {
+              width: 300px;
+          }
+          </style>
+          </head>
+          <body>
+          <h1>The transition-delay Property</h1>
+          <div class="transition02"></div>
+        </xmp>
+        <div class="transition02"></div>
+        <h2>Propiedad Transition Timing</h2>
+        <p>Especifica la curva de la velocidad de la transicion, empezar lento y terminar rapido, que sea progresivo, etc, se añade como las otras propiedades</p>
+        <xmp>
+          .claseDeTransicion {
+            transition-timing-function: linear;
+          }
+        </xmp>
+        <p>ease=>Valor por defecto. Especifica un efecto de transición con un inicio lento, luego rápido y luego finaliza lentamente (equivalente a cúbico-bóveda (0.25,0.1,0.25,1))</p>
+        <p>linear=>Especifica un efecto de transición con la misma velocidad de principio a fin (equivalente a cubic-bezier (0,0,1,1))</p>
+        <p>ease-in=>Especifica un efecto de transición con un inicio lento (equivalente a cubic-bezier (0.42,0,1,1))</p>
+        <p>ease-out=>Especifica un efecto de transición con un final lento (equivalente a cubic-bezier (0,0,0.58,1))</p>
+        <p>ease-in-out=>Especifica un efecto de transición con un comienzo y un final lentos (equivalente a cúbico-bezier (0.42,0,0.58,1))</p>
+        <p>step-start=>Equivalente a los pasos (1, inicio)</p>
+        <p>step-end=>Equivalent to steps(1, fin)</p>
+        <p>steps(int,start|end)=>Especifica una función de paso a paso, con dos parámetros. El primer parámetro especifica el número de intervalos en la función. Debe ser un entero positivo (mayor que 0). El segundo parámetro, que es opcional, es el valor "inicio" o "fin", y especifica el punto en el que se produce el cambio de valores dentro del intervalo. Si se omite el segundo parámetro, se le da el valor "final"</p>
+        <p>cubic-bezier(n,n,n,n)=>Defina sus propios valores en la función bóveda cúbica. Los valores posibles son valores numéricos de 0 a 1</p>
+        <p>initial=>Establece esta propiedad a su valor predeterminado</p>
+        <p>inherit=>Hereda esta propiedad de su elemento principal</p>
+      </div>
+    </div>
+  </body>
+</html>
+<style media="screen">
+  body{
+    background-color: #48867e;
+    text-align: center;
+    width: 99%;
+  }
+  h1{
+    text-decoration: underline;
+    color: purple;
+  }
+  h2{
+    text-decoration: underline;
+  }
+  .original{
+    opacity: 0.9;
+    margin: 0 auto;
+    text-align: center;
+    width: 35%;
+    height: auto;
+    background-color: red;
+    color: white;
+  }
+  .article{
+    display: inline-block;
+    width: 60%;
+    height: auto;
+  }
+  .article p{
+    margin-bottom: 3em;
+  }
+  .example{
+    position: relative;
+    margin: 0 auto;
+    z-index: -99;
+    text-align: center;
+    width: 35%;
+    height: auto;
+    background-color: blue;
+    color: white;
+  }
+  table.w3-table-all {
+    margin: 20px 0;
+}
+.w3-table-all {
+    border: 1px solid #ccc;
+}
+.w3-table, .w3-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+  li{
+    list-style:none;
+  }
+  #translate{
+    transform: translate(100px, 10px);
+  }
+  #rotate{
+    transform: rotate(20deg);
+  }
+  #scale{
+    transform: scale(2, 3);
+  }
+  #skewX{
+    transform: skewX(20deg);
+  }
+  #skewY{
+    transform: skewY(20deg);
+  }
+  #skew{
+    transform: skew(20deg, 30deg);
+  }
+  #matrix{
+    transform: matrix(2, -0.3, 0, 1, 0, 10);
+  }
+  #rotateX{
+    transform: rotateX(150deg);
+  }
+  xmp{
+    text-align: justify;
+  }
+  .transition02 {
+      width: 100px;
+      height: 100px;
+      background: red;
+      -webkit-transition-property: width; /* Safari */
+      -webkit-transition-duration: 5s; /* Safari */
+      -webkit-transition-delay: 2s; /* Safari */
+      transition-property: width;
+      transition-duration: 5s;
+      transition-delay: 2s;
+  }
+
+  .transition02:hover {
+      width: 300px;
+  }
+</style>
